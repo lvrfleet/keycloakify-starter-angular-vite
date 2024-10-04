@@ -1,24 +1,31 @@
 {
-  "name": "analog-keycloakify-starter",
+  "name": "keycloakify-starter-angular-vite",
   "version": "0.0.0",
   "type": "module",
-  "description": "Analog JS Starter for Keycloakify 11",
+  "description": "Angular + Vite Starter for Keycloakify 11",
   "repository": {
     "type": "git",
-    "url": "git://github.com/luca-peruzzo/analog-keycloakify-starter.git"
+    "url": "git://github.com/keycloakify/keycloakify-starter-angular-vite.git"
   },
   "scripts": {
     "dev": "vite",
     "start": "npm run dev",
     "build": "vite build",
     "build-keycloak-theme": "npm run build && keycloakify build",
-    "storybook": "storybook dev -p 6006",
+    "storybook": "storybook dev -p 6006 --no-open",
     "build-storybook": "storybook build",
     "lint": "eslint . --fix",
     "test": "vitest"
   },
+  "author": "u/luca-peruzzo",
   "license": "MIT",
-  "keywords": [],
+  "keywords": [
+    "angular",
+    "keyclaokify",
+    "keycloak",
+    "vite",
+    "analog"
+  ],
   "dependencies": {
     "@angular/animations": "^18.2.6",
     "@angular/build": "^18.2.6",
@@ -28,8 +35,8 @@
     "@angular/forms": "^18.2.6",
     "@angular/platform-browser": "^18.2.6",
     "@angular/platform-browser-dynamic": "^18.2.6",
-    "@keycloakify/angular":"0.0.1-rc.18",
-    "keycloakify": "^11.2.6",
+    "@keycloakify/angular": "^0.0.1-rc.19",
+    "keycloakify": "^11.2.10",
     "prismjs": "^1.29.0",
     "rxjs": "~7.8.0",
     "tsafe": "^1.7.5",
@@ -65,7 +72,6 @@
     "@typescript-eslint/utils": "^8.7.0"
   },
   "engines": {
-    "node": "^18.0.0 || >=20.0.0"
-  },
-  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+    "node": ">=20.0.0"
+  }
 }

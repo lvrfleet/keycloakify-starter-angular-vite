@@ -1,16 +1,16 @@
 <p align="center">
-    <i>🚀 <a href="https://keycloakify.dev">Analog JS Keycloakify</a> v11 starter 🚀</i>
+    <i>🚀 <a href="https://keycloakify.dev">Angular + Vite Keycloakify</a> v11 starter 🚀</i>
     <br/>
     <br/>
 </p>
 
-This starter is based on Vite and Analog JS. There is also [a Webpack based starter](https://github.com/kathari00/keycloakify-starter-angular).
+This starter is based on Vite and Angular. There is also [a Webpack based starter](https://github.com/keycloakify/keycloakify-starter-angular).
 
 # Quick start
 
 ```bash
-git clone https://github.com/luca-peruzzo/analog-keycloakify-starter
-cd analog-keycloakify-starter
+git clone https://github.com/keycloakify/keycloakify-starter-angular-vite
+cd keycloakify-starter-angular-vite
 npm install # Or use an other package manager, just be sure to delete the package.lock if you use another package manager.
 ```
 

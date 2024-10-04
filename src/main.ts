@@ -2,8 +2,10 @@ import '@angular/compiler';
 
 import { provideExperimentalZonelessChangeDetection } from '@angular/core';
 import { bootstrapApplication } from '@angular/platform-browser';
+import { TemplateComponent as AccountTemplate } from '@keycloakify/angular/account/containers/template';
 import { provideKeycloakifyAngularAccount } from '@keycloakify/angular/account/providers/keycloakify-angular';
 import { UserProfileFormFieldsComponent } from '@keycloakify/angular/login/components/user-profile-form-fields';
+import { TemplateComponent as LoginTemplate } from '@keycloakify/angular/login/containers/template';
 import { provideKeycloakifyAngularLogin } from '@keycloakify/angular/login/providers/keycloakify-angular';
 import { KcPage } from './kc.gen-angular';
 
@@ -29,7 +31,7 @@ if (!window.kcContext) {
   const { Page, getI18n } = KcPage(window.kcContext)!;
   Promise.all([Page, getI18n]).then(
     ([{ ComponentBootstrap, doMakeUserConfirmPassword, doUseDefaultCss, classes }, getI18n]) => {
-      bootstrapApplication(ComponentBootstrap, {
+      bootstrapApplication(window.kcContext?.themeType === 'account' ? AccountTemplate : LoginTemplate, {
         providers: [
           provideExperimentalZonelessChangeDetection(),
           window.kcContext?.themeType === 'account'
@@ -47,6 +49,9 @@ if (!window.kcContext) {
         ],
       }).then((appRef) => {
         appRef.components.forEach((componentRef) => {
+          if ('page' in componentRef.instance) {
+            componentRef.setInput('page', ComponentBootstrap);
+          }
           if ('userProfileFormFields' in componentRef.instance) {
             componentRef.setInput('userProfileFormFields', UserProfileFormFieldsComponent);
           }
