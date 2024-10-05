@@ -15,11 +15,10 @@ export default defineConfig(({ mode }) => ({
   plugins: [
     angular(),
     keycloakify({
-      accountThemeImplementation: 'Multi-Page',
-      // @ts-expect-error wrong typing
+      accountThemeImplementation: 'none',
       keycloakVersionTargets: {
-        '21-and-below': false,
-        '25-and-above': true,
+        '22-to-25': true,
+        'all-other-versions': false,
       },
     }),
   ],

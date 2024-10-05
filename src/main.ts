@@ -2,8 +2,6 @@ import '@angular/compiler';
 
 import { provideExperimentalZonelessChangeDetection } from '@angular/core';
 import { bootstrapApplication } from '@angular/platform-browser';
-import { TemplateComponent as AccountTemplate } from '@keycloakify/angular/account/containers/template';
-import { provideKeycloakifyAngularAccount } from '@keycloakify/angular/account/providers/keycloakify-angular';
 import { UserProfileFormFieldsComponent } from '@keycloakify/angular/login/components/user-profile-form-fields';
 import { TemplateComponent as LoginTemplate } from '@keycloakify/angular/login/containers/template';
 import { provideKeycloakifyAngularLogin } from '@keycloakify/angular/login/providers/keycloakify-angular';
@@ -31,21 +29,15 @@ if (!window.kcContext) {
   const { Page, getI18n } = KcPage(window.kcContext)!;
   Promise.all([Page, getI18n]).then(
     ([{ ComponentBootstrap, doMakeUserConfirmPassword, doUseDefaultCss, classes }, getI18n]) => {
-      bootstrapApplication(window.kcContext?.themeType === 'account' ? AccountTemplate : LoginTemplate, {
+      bootstrapApplication(LoginTemplate, {
         providers: [
           provideExperimentalZonelessChangeDetection(),
-          window.kcContext?.themeType === 'account'
-            ? provideKeycloakifyAngularAccount({
-                classes,
-                doUseDefaultCss,
-                getI18n: getI18n,
-              })
-            : provideKeycloakifyAngularLogin({
-                classes,
-                doMakeUserConfirmPassword,
-                doUseDefaultCss,
-                getI18n: getI18n,
-              }),
+          provideKeycloakifyAngularLogin({
+            classes,
+            doMakeUserConfirmPassword,
+            doUseDefaultCss,
+            getI18n: getI18n,
+          }),
         ],
       }).then((appRef) => {
         appRef.components.forEach((componentRef) => {
