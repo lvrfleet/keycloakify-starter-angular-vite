@@ -11,7 +11,7 @@ This starter is based on Vite and Angular. There is also [a Webpack based starte
 ```bash
 git clone https://github.com/keycloakify/keycloakify-starter-angular-vite
 cd keycloakify-starter-angular-vite
-npm install # Or use an other package manager, just be sure to delete the package.lock if you use another package manager.
+yarn install # Or use an other package manager, just be sure to delete the yarn.lock if you use another package manager.
 ```
 
 # Testing the theme locally
@@ -41,7 +41,7 @@ You can customize this behavior, see documentation [here](https://docs.keycloaki
 # Initializing the account theme
 
 ```bash
-TODO
+npx keycloakify initialize-account-theme
 ```
 
 # Initializing the email theme
