@@ -31,7 +31,27 @@
     "@angular-devkit/core" "18.2.10"
     rxjs "7.8.1"
 
-"@angular-devkit/core@18.2.10":
+"@angular-devkit/architect@^0.1800.0":
+  version "0.1800.7"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/architect/-/architect-0.1800.7.tgz#105aaf62e676b4df2d95ffbec256f899c325847f"
+  integrity sha512-ZYIjdngUOjY6G2XJGHtATLr+HhJWdo7Z3ATlzQTGI9D1a02kW3UFlELQBhFIn+1o78FU6W0STZgyfBH8M7wD2w==
+  dependencies:
+    "@angular-devkit/core" "18.0.7"
+    rxjs "7.8.1"
+
+"@angular-devkit/core@18.0.7":
+  version "18.0.7"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-18.0.7.tgz#c792a90fd30dcbabe7b4821ac16e88f99c9ed8f7"
+  integrity sha512-pVmuE37DNuTe3S4Lh1jg6U4dyHljiZiqI99u3gtS7PF765P4AeGlugHIYE7ztC74fYd9gy04sWnbeV+RQuBTVw==
+  dependencies:
+    ajv "8.13.0"
+    ajv-formats "3.0.1"
+    jsonc-parser "3.2.1"
+    picomatch "4.0.2"
+    rxjs "7.8.1"
+    source-map "0.7.4"
+
+"@angular-devkit/core@18.2.10", "@angular-devkit/core@^18.2.10":
   version "18.2.10"
   resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-18.2.10.tgz#7565f0c7bf0fa3318d08c4a696e890ab0b670032"
   integrity sha512-LFqiNdraBujg8e1lhuB0bkFVAoIbVbeXXwfoeROKH60OPbP8tHdgV6sFTqU7UGBKA+b+bYye70KFTG2Ys8QzKQ==
@@ -43,7 +63,7 @@
     rxjs "7.8.1"
     source-map "0.7.4"
 
-"@angular-devkit/schematics@18.2.10":
+"@angular-devkit/schematics@18.2.10", "@angular-devkit/schematics@^18.2.10":
   version "18.2.10"
   resolved "https://registry.yarnpkg.com/@angular-devkit/schematics/-/schematics-18.2.10.tgz#2ca7dde6f8c9062c3ef8254a12edeffdd180272e"
   integrity sha512-EIm/yCYg3ZYPsPYJxXRX5F6PofJCbNQ5rZEuQEY09vy+ZRTqGezH0qoUP5WxlYeJrjiRLYqADI9WtVNzDyaD4w==
@@ -920,10 +940,10 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@keycloakify/angular@^0.0.9":
-  version "0.0.9"
-  resolved "https://registry.yarnpkg.com/@keycloakify/angular/-/angular-0.0.9.tgz#3e09b77e95aa3c19e60501fe53a9eda9df625198"
-  integrity sha512-jXJkUgnVFEm6yH/09xrCxXeyYLCddh19wMtXHZa3FD11sxCRwxpob63t1U+TbSkk89Afil7t9zt2oqM9rv/QjQ==
+"@keycloakify/angular@^0.0.10":
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/@keycloakify/angular/-/angular-0.0.10.tgz#18b98eac99ee5bfa34f8d22dfe340e9d05b5f8fa"
+  integrity sha512-OrHoq32OtgPC4x9XG4Mf9SygzO0J8xvNo5PonUqaSPiCDnisBb0f7wEsQZTgMc53YuFVleCUbUFk8ArD/eT7jA==
   dependencies:
     tsafe "^1.7.5"
     tslib "^2.3.0"
@@ -1596,6 +1616,16 @@ ajv-formats@3.0.1:
   integrity sha512-8iUql50EUR+uUcdRQ3HDqa6EVyo3docL8g5WJ3FNcWmu62IbkGUue/pEyLBW8VGKKucTPgqeks4fIU1DA4yowQ==
   dependencies:
     ajv "^8.0.0"
+
+ajv@8.13.0:
+  version "8.13.0"
+  resolved "https://registry.yarnpkg.com/ajv/-/ajv-8.13.0.tgz#a3939eaec9fb80d217ddf0c3376948c023f28c91"
+  integrity sha512-PRA911Blj99jR5RMeTunVbNXMF6Lp4vZXnk5GQjcnUWUTsrXtekg/pnmFFI2u/I36Y/2bITGS30GZCXei6uNkA==
+  dependencies:
+    fast-deep-equal "^3.1.3"
+    json-schema-traverse "^1.0.0"
+    require-from-string "^2.0.2"
+    uri-js "^4.4.1"
 
 ajv@8.17.1, ajv@^8.0.0:
   version "8.17.1"
@@ -2869,6 +2899,11 @@ json5@^2.2.3:
   resolved "https://registry.yarnpkg.com/json5/-/json5-2.2.3.tgz#78cd6f1a19bdc12b73db5ad0c61efd66c1e29283"
   integrity sha512-XmOWe7eyHYH14cLdVPoyg+GOH3rYX++KpzrylJwSW98t3Nk+U8XOl8FWKOgwtzdb8lXGf6zYwDUzeHMWfxasyg==
 
+jsonc-parser@3.2.1:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/jsonc-parser/-/jsonc-parser-3.2.1.tgz#031904571ccf929d7670ee8c547545081cb37f1a"
+  integrity sha512-AilxAyFOAcK5wA1+LeaySVBrHsGQvUFCDWXKpZjzaL0PqW+xfBOttn8GNtWKFWqneyMZj41MWF9Kl6iPWLwgOA==
+
 jsonc-parser@3.3.1:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/jsonc-parser/-/jsonc-parser-3.3.1.tgz#f2a524b4f7fd11e3d791e559977ad60b98b798b4"
@@ -2879,10 +2914,10 @@ jsonparse@^1.3.1:
   resolved "https://registry.yarnpkg.com/jsonparse/-/jsonparse-1.3.1.tgz#3f4dae4a91fac315f71062f8521cc239f1366280"
   integrity sha512-POQXvpdL69+CluYsillJ7SUhKvytYjW9vG/GKpnf+xP8UWgYEM/RaMzHHofbALDiKbbP1W8UEYmgGl39WkPZsg==
 
-keycloakify@^11.3.11:
-  version "11.3.11"
-  resolved "https://registry.yarnpkg.com/keycloakify/-/keycloakify-11.3.11.tgz#2eb704d0cc883070d8b1bb9a7e4ec0640fdeed52"
-  integrity sha512-ZFSocde1hekW0zW1JZEcbPwPwLEmqLGX8qZTNl1o7DoelEZwf2Xy1ktjRuR04EJhmfwvcIdYhKFQKd39oJekfw==
+keycloakify@^11.3.12:
+  version "11.3.12"
+  resolved "https://registry.yarnpkg.com/keycloakify/-/keycloakify-11.3.12.tgz#783a412c36bbceaeb3880bfcde9475cb294155d4"
+  integrity sha512-x29MWUkVpxRzUHDe1pFl1/briiHEFI4dslJdw/5JcnaaNoUHA4g0YntVKO1iMkVETEtbCs6B7Hr+LDdCtGCKmA==
   dependencies:
     tsafe "^1.7.5"
 
@@ -4200,7 +4235,7 @@ update-browserslist-db@^1.1.1:
     escalade "^3.2.0"
     picocolors "^1.1.0"
 
-uri-js@^4.2.2:
+uri-js@^4.2.2, uri-js@^4.4.1:
   version "4.4.1"
   resolved "https://registry.yarnpkg.com/uri-js/-/uri-js-4.4.1.tgz#9b1a52595225859e55f669d928f88c6c57f2a77e"
   integrity sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==
