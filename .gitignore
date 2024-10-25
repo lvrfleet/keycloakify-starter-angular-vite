@@ -56,5 +56,3 @@ Thumbs.db
 /storybook-static/
 
 *storybook.log
-yarn.lock
-package-lock.json
