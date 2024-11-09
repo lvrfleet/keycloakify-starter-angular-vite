@@ -908,12 +908,12 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@keycloakify/angular@^0.0.10":
-  version "0.0.10"
-  resolved "https://registry.yarnpkg.com/@keycloakify/angular/-/angular-0.0.10.tgz#18b98eac99ee5bfa34f8d22dfe340e9d05b5f8fa"
-  integrity sha512-OrHoq32OtgPC4x9XG4Mf9SygzO0J8xvNo5PonUqaSPiCDnisBb0f7wEsQZTgMc53YuFVleCUbUFk8ArD/eT7jA==
+"@keycloakify/angular@^0.0.11":
+  version "0.0.11"
+  resolved "https://registry.yarnpkg.com/@keycloakify/angular/-/angular-0.0.11.tgz#4272a745f825f837e2b457e263ea31d946cdffce"
+  integrity sha512-4tBGWivNx7epD0aNqGsnO2CsX3YfjB7riHUmAK8dELhRe4JqjklpTa+viEboS9MYYaV7IcvsPlmx1hcRbljltg==
   dependencies:
-    tsafe "^1.7.5"
+    tsafe "^1.8.1"
     tslib "^2.3.0"
 
 "@listr2/prompt-adapter-inquirer@2.0.15":
@@ -4019,7 +4019,7 @@ ts-morph@^21.0.0:
     "@ts-morph/common" "~0.22.0"
     code-block-writer "^12.0.0"
 
-tsafe@^1.7.5:
+tsafe@^1.7.5, tsafe@^1.8.1:
   version "1.8.1"
   resolved "https://registry.yarnpkg.com/tsafe/-/tsafe-1.8.1.tgz#69cf0c17ef8414123c08ce79e33e65fe1d6236e1"
   integrity sha512-k2PQvnVin8FacLug5qHA57262zjp/T2zM8qlRLnYvVwgTT2VcwlG5latPiUhJn+TXL28cgVNgzoBvJYHKfj+XA==
