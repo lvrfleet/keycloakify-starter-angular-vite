@@ -1,10 +1,10 @@
 /* eslint-disable @angular-eslint/component-class-suffix */
 import { Component, inject, OnInit, Type } from '@angular/core';
-import { provideKeycloakifyAngular } from '@keycloakify/angular/account/providers/keycloakify-angular';
-import { TemplateComponent } from '@keycloakify/angular/account/template';
+import { provideKeycloakifyAngular } from '@keycloakify/angular/login/providers/keycloakify-angular';
+import { TemplateComponent } from '@keycloakify/angular/login/template';
 import { getKcPage } from './KcPage';
 import { getI18n } from './i18n';
-import { KC_ACCOUNT_CONTEXT } from '@keycloakify/angular/account/tokens/kc-context';
+import { KC_LOGIN_CONTEXT } from '@keycloakify/angular/login/tokens/kc-context';
 import { createGetKcContextMock } from 'keycloakify/login/KcContext';
 import { kcEnvDefaults, themeNames } from '../kc.gen';
 import type { KcContextExtension, KcContextExtensionPerPage } from './KcContext';
@@ -55,7 +55,7 @@ export const decorators = (_: unknown, context: StoryContextLike) => ({
 })
 export class KcPageStory implements OnInit {
   pageComponent: Type<unknown> | undefined;
-  kcContext = inject(KC_ACCOUNT_CONTEXT);
+  kcContext = inject(KC_LOGIN_CONTEXT);
   ngOnInit() {
     getKcPage(this.kcContext.pageId).then((kcPage) => {
       this.pageComponent = kcPage.PageComponent;
