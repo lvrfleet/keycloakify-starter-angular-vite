@@ -17,7 +17,7 @@
     "lint": "eslint . --fix",
     "test": "vitest"
   },
-  "author": "u/luca-peruzzo",
+  "author": "u/luca-peruzzo, u/kathari00, u/garronej",
   "license": "MIT",
   "keywords": [
     "angular",
@@ -35,8 +35,8 @@
     "@angular/forms": "^18.2.11",
     "@angular/platform-browser": "^18.2.11",
     "@angular/platform-browser-dynamic": "^18.2.11",
-    "@keycloakify/angular": "^0.0.11",
-    "keycloakify": "^11.3.16",
+    "@keycloakify/angular": "^0.1.0",
+    "keycloakify": "^11.3.17",
     "prismjs": "^1.29.0",
     "rxjs": "~7.8.1",
     "tslib": "^2.8.1"
@@ -44,9 +44,10 @@
   "devDependencies": {
     "@analogjs/vite-plugin-angular": "^1.9.2",
     "@analogjs/vitest-angular": "^1.9.2",
-    "@angular-devkit/architect": "^0.1802.11",
+    "@angular-devkit/architect": "^0.1800.0",
     "@angular-devkit/core": "^18.2.11",
     "@angular-devkit/schematics": "^18.2.11",
+    "zone.js": "~0.14.10",
     "@angular/cli": "^18.2.11",
     "@angular/compiler-cli": "^18.2.11",
     "@eslint/compat": "^1.2.2",
