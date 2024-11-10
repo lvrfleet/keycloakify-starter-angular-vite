@@ -4,7 +4,7 @@ import { TemplateComponent } from '@keycloakify/angular/login/template';
 import type { ClassKey } from 'keycloakify/login';
 import type { KcContext } from './KcContext';
 
-const classes = {} satisfies { [key in ClassKey]?: string };
+const classes = {} satisfies Partial<Record<ClassKey, string>>;
 const doUseDefaultCss = true;
 const doMakeUserConfirmPassword = true;
 
