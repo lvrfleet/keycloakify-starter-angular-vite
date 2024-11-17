@@ -26,6 +26,7 @@ export default tseslint.config(
       '@typescript-eslint/consistent-type-definitions': 'off',
       '@typescript-eslint/no-inferrable-types': 'off',
       '@typescript-eslint/no-namespace': 'off',
+      '@typescript-eslint/no-empty-object-type': 'off',
       '@angular-eslint/directive-selector': [
         'error',
         {
