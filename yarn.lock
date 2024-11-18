@@ -2828,10 +2828,10 @@ jsonparse@^1.3.1:
   resolved "https://registry.yarnpkg.com/jsonparse/-/jsonparse-1.3.1.tgz#3f4dae4a91fac315f71062f8521cc239f1366280"
   integrity sha512-POQXvpdL69+CluYsillJ7SUhKvytYjW9vG/GKpnf+xP8UWgYEM/RaMzHHofbALDiKbbP1W8UEYmgGl39WkPZsg==
 
-keycloakify@^11.3.20:
-  version "11.3.20"
-  resolved "https://registry.yarnpkg.com/keycloakify/-/keycloakify-11.3.20.tgz#6cea0d4cfadaecb05ff9b7fb51dfd9e8b344aa8b"
-  integrity sha512-xMXTxjefzVYgZNeZMkZ3wIyKlJU4XAwyelMHzVDbH/GtO1xbGafQQVB75qBYpBf0VIVzRwD3aie8Wqlltc4H/Q==
+keycloakify@^11.3.22:
+  version "11.3.22"
+  resolved "https://registry.yarnpkg.com/keycloakify/-/keycloakify-11.3.22.tgz#35cec3a05592feac8c4b09458ebf69afb5e101c1"
+  integrity sha512-3InmI5Y69YgdemOCcu03HPqJ8NM3Y+OI/1dsYgodLfGr7YSgTK/6Q2sxdu2fsgZoCWnpNisuAEOXwjKdI/T6bw==
   dependencies:
     tsafe "^1.7.5"
 
