@@ -35,7 +35,7 @@
     "@angular/forms": "^19.0.3",
     "@angular/platform-browser": "^19.0.3",
     "@angular/platform-browser-dynamic": "^19.0.3",
-    "@keycloakify/angular": "^0.2.2",
+    "@keycloakify/angular": "^0.2.4",
     "keycloakify": "^11.4.2",
     "prismjs": "^1.29.0",
     "rxjs": "~7.8.1",

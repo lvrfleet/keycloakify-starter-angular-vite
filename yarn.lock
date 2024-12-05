@@ -916,10 +916,10 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@keycloakify/angular@^0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@keycloakify/angular/-/angular-0.2.2.tgz#12e9bef1336e9af2b14cf85cf69757e71cec0789"
-  integrity sha512-7iz9byDr5gDKwCb6gyA+yYpNhep6pjkJf+RWkPHdh6fFhZj40dxCdQPMtngpQVU59tbeY6iqY0xbTzogPRbjxA==
+"@keycloakify/angular@^0.2.4":
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/@keycloakify/angular/-/angular-0.2.4.tgz#d3dcf1f49b7394f0f39fe49172efa4b6e41bbbdb"
+  integrity sha512-qBAcAymwH8B/tSdh4E6CrkkAuwzlwMU7viKKg77VlhBtdybZLpvx2HS44dCe8FIp/tajqMqRiBka3jwGYtlpqw==
   dependencies:
     tsafe "^1.8.1"
     tslib "^2.3.0"
