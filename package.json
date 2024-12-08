@@ -33,7 +33,7 @@
     "@angular/forms": "^19.0.3",
     "@angular/platform-browser": "^19.0.3",
     "@angular/platform-browser-dynamic": "^19.0.3",
-    "@keycloakify/angular": "^0.2.7",
+    "@keycloakify/angular": "^0.2.8",
     "front-matter": "^4.0.2",
     "keycloakify": "^11.4.3",
     "marked": "^5.0.2",
