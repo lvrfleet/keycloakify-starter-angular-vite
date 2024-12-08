@@ -1,4 +1,3 @@
-import '@angular/compiler';
 import { bootstrapApplication } from '@angular/platform-browser';
 import { bootstrapKcApplication } from './kc.gen';
 import { appConfig } from './app.config';

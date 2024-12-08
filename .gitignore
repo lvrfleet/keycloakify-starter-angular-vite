@@ -39,9 +39,6 @@ testem.log
 .DS_Store
 Thumbs.db
 
-/src/login/i18n/messages_defaultSet/
-/src/account/i18n/
-
 # VS Code devcontainers
 .devcontainer
 /.yarn
@@ -56,3 +53,5 @@ Thumbs.db
 /storybook-static/
 
 *storybook.log
+
+.nx
