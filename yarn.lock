@@ -1930,10 +1930,10 @@
   resolved "https://registry.yarnpkg.com/@jsonjoy.com/util/-/util-1.5.0.tgz#6008e35b9d9d8ee27bc4bfaa70c8cbf33a537b4c"
   integrity sha512-ojoNsrIuPI9g6o8UxhraZQSyF2ByJanAY4cTFbc8Mf2AXEF4aQRGY1dJxyJpuyav8r9FGflEt/Ff3u5Nt6YMPA==
 
-"@keycloakify/angular@^0.2.8":
-  version "0.2.8"
-  resolved "https://registry.yarnpkg.com/@keycloakify/angular/-/angular-0.2.8.tgz#83236c2711cc13b1917cf6afb586d9737652e421"
-  integrity sha512-5a4zewNSQOwF5aviYlGeOFYA+sk52cTJbob+QbhYyjbOLWQYl8SEjPpt1wKI91aQ/6Tv4Kti2Do265sFC81EgA==
+"@keycloakify/angular@^0.2.9":
+  version "0.2.9"
+  resolved "https://registry.yarnpkg.com/@keycloakify/angular/-/angular-0.2.9.tgz#05b9006b5ae3b03b8289662bbac9ba56a618667b"
+  integrity sha512-tKghZqZ4kfpB0dITm5BsiRbc0AYQb7bPSsYxo/9XDvPpax6DWfa8Cm+TRcnxbxwc61YdiiBE5o8OTr7cNC79ZQ==
   dependencies:
     tsafe "^1.8.5"
     tslib "^2.3.0"
