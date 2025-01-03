@@ -1192,17 +1192,6 @@
     "@babel/helper-string-parser" "^7.25.9"
     "@babel/helper-validator-identifier" "^7.25.9"
 
-"@chromatic-com/storybook@^3.2.3":
-  version "3.2.3"
-  resolved "https://registry.yarnpkg.com/@chromatic-com/storybook/-/storybook-3.2.3.tgz#0f4d167ac80fcb38293a92c230c43446049b6758"
-  integrity sha512-3+hfANx79kIjP1qrOSLxpoAXOiYUA0S7A0WI0A24kASrv7USFNNW8etR5TjUilMb0LmqKUn3wDwUK2h6aceQ9g==
-  dependencies:
-    chromatic "^11.15.0"
-    filesize "^10.0.12"
-    jsonfile "^6.1.0"
-    react-confetti "^6.1.0"
-    strip-ansi "^7.1.0"
-
 "@cloudflare/kv-asset-handler@^0.3.4":
   version "0.3.4"
   resolved "https://registry.yarnpkg.com/@cloudflare/kv-asset-handler/-/kv-asset-handler-0.3.4.tgz#5cc152847c8ae4d280ec5d7f4f6ba8c976b585c3"
@@ -2071,10 +2060,10 @@
   resolved "https://registry.yarnpkg.com/@jsonjoy.com/util/-/util-1.5.0.tgz#6008e35b9d9d8ee27bc4bfaa70c8cbf33a537b4c"
   integrity sha512-ojoNsrIuPI9g6o8UxhraZQSyF2ByJanAY4cTFbc8Mf2AXEF4aQRGY1dJxyJpuyav8r9FGflEt/Ff3u5Nt6YMPA==
 
-"@keycloakify/angular@^0.2.12":
-  version "0.2.12"
-  resolved "https://registry.yarnpkg.com/@keycloakify/angular/-/angular-0.2.12.tgz#77fbddbad6e52791fe0af7637c12eebb017b6c64"
-  integrity sha512-+lH/JSx/V8P3AW4J2agkZiw8m5+gzC+K70MMjQRi0UyrA54D1ZyIg59TACk9kgJyVcMDNiMahRRBQ7jMr4xMsQ==
+"@keycloakify/angular@^0.2.13":
+  version "0.2.13"
+  resolved "https://registry.yarnpkg.com/@keycloakify/angular/-/angular-0.2.13.tgz#1ea6c43e7c16763ebf89d070dd2bc2ca82d91d05"
+  integrity sha512-dn6LfT+ziVxPsa1LVMBOBOW0M34aHbp/wiejrjL73swRAlLIgrQTtMsJaQoS5h4Mtl/3NvrXbFYjt3h4TmI4iQ==
   dependencies:
     tsafe "^1.8.5"
     tslib "^2.3.0"
@@ -3417,13 +3406,6 @@
   dependencies:
     "@storybook/global" "^5.0.0"
     tiny-invariant "^1.3.1"
-
-"@storybook/addon-onboarding@^8.4.7":
-  version "8.4.7"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-onboarding/-/addon-onboarding-8.4.7.tgz#212a5e27db1ee8440a2dd0d5c67ac29f0e6efda5"
-  integrity sha512-FdC2NV60VNYeMxf6DVe0qV9ucSBAzMh1//C0Qqwq8CcjthMbmKlVZ7DqbVsbIHKnFaSCaUC88eR5olAfMaauCQ==
-  dependencies:
-    react-confetti "^6.1.0"
 
 "@storybook/addon-outline@8.4.7":
   version "8.4.7"
@@ -5159,11 +5141,6 @@ chownr@^3.0.0:
   resolved "https://registry.yarnpkg.com/chownr/-/chownr-3.0.0.tgz#9855e64ecd240a9cc4267ce8a4aa5d24a1da15e4"
   integrity sha512-+IxzY9BZOQd/XuYPRmrvEVjF/nqj5kgT4kEq7VofrDoM1MxoRjEWkrCC3EtLi59TVawxTAn+orJwFQcrqEN1+g==
 
-chromatic@^11.15.0:
-  version "11.20.2"
-  resolved "https://registry.yarnpkg.com/chromatic/-/chromatic-11.20.2.tgz#10b309179cdc0b9195a5b68970366f9ebe67dfd1"
-  integrity sha512-c+M3HVl5Y60c7ipGTZTyeWzWubRW70YsJ7PPDpO1D735ib8+Lu3yGF90j61pvgkXGngpkTPHZyBw83lcu2JMxA==
-
 chrome-trace-event@^1.0.2:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/chrome-trace-event/-/chrome-trace-event-1.0.4.tgz#05bffd7ff928465093314708c93bdfa9bd1f0f5b"
@@ -6708,11 +6685,6 @@ filelist@^1.0.4:
   dependencies:
     minimatch "^5.0.1"
 
-filesize@^10.0.12:
-  version "10.1.6"
-  resolved "https://registry.yarnpkg.com/filesize/-/filesize-10.1.6.tgz#31194da825ac58689c0bce3948f33ce83aabd361"
-  integrity sha512-sJslQKU2uM33qH5nqewAwVB2QgR6w1aMNsYUp3aN5rMRyXEwJGmZvaWzeJFNTOXWlHQyBFCWrdj3fV/fsTOX8w==
-
 fill-range@^7.1.1:
   version "7.1.1"
   resolved "https://registry.yarnpkg.com/fill-range/-/fill-range-7.1.1.tgz#44265d3cac07e3ea7dc247516380643754a05292"
@@ -8073,7 +8045,7 @@ jsonfile@^4.0.0:
   optionalDependencies:
     graceful-fs "^4.1.6"
 
-jsonfile@^6.0.1, jsonfile@^6.1.0:
+jsonfile@^6.0.1:
   version "6.1.0"
   resolved "https://registry.yarnpkg.com/jsonfile/-/jsonfile-6.1.0.tgz#bc55b2634793c679ec6403094eb13698a6ec0aae"
   integrity sha512-5dgndWOriYSm5cnYaJNhalLNDKOqFwyDB/rr1E9ZsGciGvKPs8R2xYGCacuf3z6K1YKDz182fd+fY3cn3pMqXQ==
@@ -8094,10 +8066,10 @@ karma-source-map-support@1.4.0:
   dependencies:
     source-map-support "^0.5.5"
 
-keycloakify@^11.7.0:
-  version "11.7.0"
-  resolved "https://registry.yarnpkg.com/keycloakify/-/keycloakify-11.7.0.tgz#f95f7355ef0b57e4f0078a82e547dfebffedd171"
-  integrity sha512-FUYfrm0YuAXldIjSA9wS6+1r8v6qTzkWPV70OyC/mCM25uFKDuy0Kh7s5/03QgfDSoDOu0HW1Xv8iH4sVWY4hQ==
+keycloakify@^11.7.3:
+  version "11.7.3"
+  resolved "https://registry.yarnpkg.com/keycloakify/-/keycloakify-11.7.3.tgz#cf5af75606fb99ef85cba340fb41a84aad0e39b3"
+  integrity sha512-ljgGLnRhtdOvkSaXsdPG9Ofoe3Fz8ej7oP9GqMMxpGIJBoERulOZ5ZV/V9w64D2PgXrx6FygOCqqlxwRU+iEnw==
   dependencies:
     tsafe "^1.8.5"
 
@@ -10286,13 +10258,6 @@ rc9@^2.1.2:
     defu "^6.1.4"
     destr "^2.0.3"
 
-react-confetti@^6.1.0:
-  version "6.2.2"
-  resolved "https://registry.yarnpkg.com/react-confetti/-/react-confetti-6.2.2.tgz#b72888889b10b6707a91adca919dd35c653f4bb2"
-  integrity sha512-K+kTyOPgX+ZujMZ+Rmb7pZdHBvg+DzinG/w4Eh52WOB8/pfO38efnnrtEZNJmjTvLxc16RBYO+tPM68Fg8viBA==
-  dependencies:
-    tween-functions "^1.2.0"
-
 "react-dom@^16.8.0 || ^17.0.0 || ^18.0.0":
   version "18.3.1"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-18.3.1.tgz#c2265d79511b57d479b3dd3fdfa51536494c5cb4"
@@ -11708,11 +11673,6 @@ tuf-js@^3.0.1:
     "@tufjs/models" "3.0.1"
     debug "^4.3.6"
     make-fetch-happen "^14.0.1"
-
-tween-functions@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/tween-functions/-/tween-functions-1.2.0.tgz#1ae3a50e7c60bb3def774eac707acbca73bbc3ff"
-  integrity sha512-PZBtLYcCLtEcjL14Fzb1gSxPBeL7nWvGhO5ZFPGqziCcr8uvHp0NDmdjBchp6KHL+tExcg0m3NISmKxhU394dA==
 
 type-check@^0.4.0, type-check@~0.4.0:
   version "0.4.0"
