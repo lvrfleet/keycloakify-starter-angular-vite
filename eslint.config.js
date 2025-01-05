@@ -3,12 +3,15 @@ import eslint from '@eslint/js';
 import tseslint from 'typescript-eslint';
 import angular from 'angular-eslint';
 import prettier from 'eslint-plugin-prettier';
+import storybook from 'eslint-plugin-storybook';
+
 
 export default tseslint.config(
   {
     files: ['*.stories.@(ts|tsx|js|jsx|mjs|cjs)', '*.story.@(ts|tsx|js|jsx|mjs|cjs)'],
     plugins: {
       prettier,
+      storybook
     },
     rules: {
       'import/no-anonymous-default-export': 'off',
