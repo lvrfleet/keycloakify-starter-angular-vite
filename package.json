@@ -15,7 +15,6 @@
     "build-keycloak-theme": "npm run build && keycloakify build",
     "test": "ng test",
     "lint": "ng lint --fix",
-    "prestorybook": "npx keycloakify copy-keycloak-resources-to-public",
     "storybook": "storybook dev --port 4400"
   },
   "author": "u/luca-peruzzo, u/kathari00, u/garronej",
