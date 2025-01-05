@@ -37,7 +37,7 @@ export const decorators = (_: unknown, context: StoryContextLike) => ({
         classes: {},
         kcContext: getKcContextMock({
           pageId: context.globals['pageId'],
-          overrides: context.globals['overrides'],
+          overrides: context.globals['kcContext'],
         }),
         getI18n: getI18n,
       }),

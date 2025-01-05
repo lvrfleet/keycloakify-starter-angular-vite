@@ -3462,6 +3462,15 @@
     "@storybook/icons" "^1.2.12"
     ts-dedent "^2.0.0"
 
+"@storybook/builder-vite@^8.4.7":
+  version "8.4.7"
+  resolved "https://registry.yarnpkg.com/@storybook/builder-vite/-/builder-vite-8.4.7.tgz#3d6d542fa1f46fce5ee7a159dc8491cb4421254d"
+  integrity sha512-LovyXG5VM0w7CovI/k56ZZyWCveQFVDl0m7WwetpmMh2mmFJ+uPQ35BBsgTvTfc8RHi+9Q3F58qP1MQSByXi9g==
+  dependencies:
+    "@storybook/csf-plugin" "8.4.7"
+    browser-assert "^1.2.1"
+    ts-dedent "^2.0.0"
+
 "@storybook/builder-webpack5@8.4.7":
   version "8.4.7"
   resolved "https://registry.yarnpkg.com/@storybook/builder-webpack5/-/builder-webpack5-8.4.7.tgz#5bc15568716bbf4f45a88fc389e25fa2ce50a8c2"
