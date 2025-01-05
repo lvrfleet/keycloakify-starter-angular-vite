@@ -81,11 +81,6 @@
     "vitest": "^2.0.0",
     "zone.js": "~0.15.0"
   },
-  "overrides": {
-    "@nx/angular": {
-      "@angular-devkit/build-angular": "$@angular-devkit/build-angular"
-    }
-  },
   "engines": {
     "node": ">=20.0.0"
   }
