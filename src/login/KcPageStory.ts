@@ -8,7 +8,7 @@ import { KC_LOGIN_CONTEXT } from '@keycloakify/angular/login/tokens/kc-context';
 import { createGetKcContextMock } from 'keycloakify/login/KcContext';
 import { kcEnvDefaults, themeNames } from '../kc.gen';
 import type { KcContextExtension, KcContextExtensionPerPage } from './KcContext';
-
+import { classes, doMakeUserConfirmPassword, doUseDefaultCss } from './KcPage';
 const kcContextExtension: KcContextExtension = {
   themeName: themeNames[0],
   properties: {
@@ -33,8 +33,9 @@ export const decorators = (_: unknown, context: StoryContextLike) => ({
   applicationConfig: {
     providers: [
       provideKeycloakifyAngular({
-        doUseDefaultCss: true,
-        classes: {},
+        doMakeUserConfirmPassword: doMakeUserConfirmPassword,
+        doUseDefaultCss: doUseDefaultCss,
+        classes: classes,
         kcContext: getKcContextMock({
           pageId: context.globals['pageId'],
           overrides: context.globals['kcContext'],
