@@ -2,6 +2,8 @@ import type { StorybookConfig } from '@storybook/angular';
 import { StorybookConfigVite } from '@storybook/builder-vite';
 import { UserConfig } from 'vite';
 
+const isDevMode = process.env.NODE_ENV === 'development';
+
 const config: StorybookConfig & StorybookConfigVite = {
   stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
   addons: ['@storybook/addon-essentials', '@storybook/addon-interactions'],
@@ -26,13 +28,14 @@ const config: StorybookConfig & StorybookConfigVite = {
     return mergeConfig(config, {
       // Add dependencies to pre-optimization
       optimizeDeps: {
-        include: ['@storybook/angular', '@storybook/angular/dist', '@angular/compiler', '@storybook/blocks', 'tslib'],
+        include: ['@storybook/angular', '@angular/compiler', '@storybook/blocks', 'tslib', 'zone.js'],
       },
       define: {
         'process.env': {},
         'process.env.NODE_ENV': JSON.stringify(configType === 'PRODUCTION' ? 'production' : 'development'),
+        STORYBOOK_ANGULAR_OPTIONS: JSON.stringify({ experimentalZoneless: false }),
       },
-      plugins: [angular({ jit: true, tsconfig: './.storybook/tsconfig.json' })],
+      plugins: [angular({ jit: !isDevMode, liveReload: isDevMode, tsconfig: './.storybook/tsconfig.json' })],
     } satisfies UserConfig);
   },
 };
