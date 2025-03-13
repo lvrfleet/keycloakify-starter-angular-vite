@@ -1,0 +1,7 @@
+body.kcBodyClass {
+    background: url(/cool-background.png) no-repeat center center fixed;
+  }
+
+  #kc-header-wrapper {
+    padding: 0;
+  }
