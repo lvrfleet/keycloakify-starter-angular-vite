@@ -11,6 +11,7 @@
     "ng": "ng",
     "dev": "ng serve",
     "start": "yarn dev",
+    "start-keycloak": "npx keycloakify start-keycloak",
     "build": "ng build",
     "build-keycloak-theme": "npm run build && keycloakify build",
     "test": "ng test",

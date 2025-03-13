@@ -13,11 +13,22 @@ const meta: Meta<KcPageStory> = {
 export default meta;
 type Story = StoryObj<KcPageStory>;
 
-export const Default: Story = {};
+export const Default: Story = {
+  globals: {
+    kcContext: {
+      locale: {
+        currentLanguageTag: "fr"
+      },
+    },
+  },
+};
 
 export const WithInvalidCredential: Story = {
   globals: {
     kcContext: {
+      locale: {
+        currentLanguageTag: "fr"
+      },
       login: {
         username: 'johndoe',
       },
@@ -37,6 +48,9 @@ export const WithInvalidCredential: Story = {
 export const WithoutRegistration: Story = {
   globals: {
     kcContext: {
+      locale: {
+        currentLanguageTag: "fr"
+      },
       realm: { registrationAllowed: false },
     },
   },
@@ -45,6 +59,9 @@ export const WithoutRegistration: Story = {
 export const WithoutRememberMe: Story = {
   globals: {
     kcContext: {
+      locale: {
+        currentLanguageTag: "fr"
+      },
       realm: { rememberMe: false },
     },
   },
@@ -53,6 +70,9 @@ export const WithoutRememberMe: Story = {
 export const WithoutPasswordReset: Story = {
   globals: {
     kcContext: {
+      locale: {
+        currentLanguageTag: "fr"
+      },
       realm: { resetPasswordAllowed: false },
     },
   },
@@ -61,6 +81,9 @@ export const WithoutPasswordReset: Story = {
 export const WithEmailAsUsername: Story = {
   globals: {
     kcContext: {
+      locale: {
+        currentLanguageTag: "fr"
+      },
       realm: { loginWithEmailAllowed: false },
     },
   },
@@ -69,6 +92,9 @@ export const WithEmailAsUsername: Story = {
 export const WithPresetUsername: Story = {
   globals: {
     kcContext: {
+      locale: {
+        currentLanguageTag: "fr"
+      },
       login: { username: 'max.mustermann@mail.com' },
     },
   },
@@ -77,6 +103,9 @@ export const WithPresetUsername: Story = {
 export const WithImmutablePresetUsername: Story = {
   globals: {
     kcContext: {
+      locale: {
+        currentLanguageTag: "fr"
+      },
       auth: {
         attemptedUsername: 'max.mustermann@mail.com',
         showUsername: true,
@@ -93,6 +122,9 @@ export const WithImmutablePresetUsername: Story = {
 export const WithSocialProviders: Story = {
   globals: {
     kcContext: {
+      locale: {
+        currentLanguageTag: "fr"
+      },
       social: {
         displayInfo: true,
         providers: [
@@ -133,6 +165,9 @@ export const WithSocialProviders: Story = {
 export const WithoutPasswordField: Story = {
   globals: {
     kcContext: {
+      locale: {
+        currentLanguageTag: "fr"
+      },
       realm: { password: false },
     },
   },
@@ -141,6 +176,9 @@ export const WithoutPasswordField: Story = {
 export const WithErrorMessage: Story = {
   globals: {
     kcContext: {
+      locale: {
+        currentLanguageTag: "fr"
+      },
       message: {
         summary:
           'The time allotted for the connection has elapsed.<br/>The login process will restart from the beginning.',
@@ -153,6 +191,9 @@ export const WithErrorMessage: Story = {
 export const WithOneSocialProvider: Story = {
   globals: {
     kcContext: {
+      locale: {
+        currentLanguageTag: "fr"
+      },
       social: {
         displayInfo: true,
         providers: [
@@ -172,6 +213,9 @@ export const WithOneSocialProvider: Story = {
 export const WithTwoSocialProviders: Story = {
   globals: {
     kcContext: {
+      locale: {
+        currentLanguageTag: "fr"
+      },
       social: {
         displayInfo: true,
         providers: [
@@ -198,6 +242,9 @@ export const WithTwoSocialProviders: Story = {
 export const WithMoreThanTwoSocialProviders: Story = {
   globals: {
     kcContext: {
+      locale: {
+        currentLanguageTag: "fr"
+      },
       social: {
         displayInfo: true,
         providers: [
@@ -238,6 +285,9 @@ export const WithMoreThanTwoSocialProviders: Story = {
 export const WithSocialProvidersAndWithoutRememberMe: Story = {
   globals: {
     kcContext: {
+      locale: {
+        currentLanguageTag: "fr"
+      },
       social: {
         displayInfo: true,
         providers: [
