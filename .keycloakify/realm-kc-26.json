@@ -1585,7 +1585,7 @@
   "loginTheme": "keycloakify-starter-angular-vite",
   "accountTheme": "",
   "adminTheme": "",
-  "emailTheme": "",
+  "emailTheme": "keycloakify-starter-angular-vite",
   "eventsEnabled": false,
   "eventsListeners": ["keycloakify-logging", "jboss-logging"],
   "enabledEventTypes": [],
